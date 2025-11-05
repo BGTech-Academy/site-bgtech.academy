@@ -119,19 +119,19 @@ if (typingElement) {
                 if (charIndex > fullText.length) {
                     lineIndex++;
                     charIndex = 0;
-                    setTimeout(typeNextChar, 2000); // Pause 2 seconds before next line
+                    setTimeout(typeNextChar, 1000); // Pause 1 second before next line
                 } else {
                     setTimeout(typeNextChar, 50); // Typing speed
                 }
             }
         } else {
-            // Finished typing - wait 1 second before removing cursor
+            // Finished typing - wait 2 seconds before removing cursor
             setTimeout(() => {
                 const cursor = typingElement.querySelector('.typing-cursor');
                 if (cursor) {
                     cursor.classList.add('finished');
                 }
-            }, 1000);
+            }, 2000);
         }
     }
     

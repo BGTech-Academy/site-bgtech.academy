@@ -3,14 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BGTech Academy</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>BGTech Academy - Curso de Programação Online com Projetos Reais e IA | Front-End, Back-End e Full-Stack</title>
+    <meta name="title" content="BGTech Academy - Curso de Programação Online com Projetos Reais e IA | Front-End, Back-End e Full-Stack">
+    <meta name="description" content="Aprenda programação do zero com a BGTech Academy. Cursos de Front-End, Back-End e Full-Stack com projetos reais, mentoria individual, uso de IA e portfólio profissional. Seja um desenvolvedor web em 6 meses.">
+    <meta name="keywords" content="curso de programação, curso de programação online, aprender programação, curso full stack, curso front-end, curso back-end, curso javascript, curso react, curso node.js, curso desenvolvimento web, programação para iniciantes, escola de programação, curso de código, aprender a programar do zero, bootcamp programação, formação desenvolvedor, curso HTML CSS, curso TypeScript, curso com IA, projetos reais programação, mentoria programação, portfólio desenvolvedor">
+    <meta name="author" content="BGTech Academy">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bgtech.academy/">
+    <meta property="og:title" content="BGTech Academy - Curso de Programação Online com Projetos Reais">
+    <meta property="og:description" content="Aprenda programação do zero com projetos reais, mentoria individual e IA. Formações Front-End, Back-End e Full-Stack. Monte seu portfólio e consiga sua vaga em tech.">
+    <meta property="og:image" content="https://bgtech.academy/assets/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="BGTech Academy">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bgtech.academy/">
+    <meta property="twitter:title" content="BGTech Academy - Curso de Programação Online com Projetos Reais">
+    <meta property="twitter:description" content="Aprenda programação do zero com projetos reais, mentoria individual e IA. Formações Front-End, Back-End e Full-Stack.">
+    <meta property="twitter:image" content="https://bgtech.academy/assets/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bgtech.academy/">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="BR">
+    <meta name="geo.placename" content="Brasil">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "BGTech Academy",
+      "url": "https://bgtech.academy",
+      "logo": "https://bgtech.academy/assets/logo.png",
+      "description": "Escola de programação online com foco em projetos reais, mentoria individual e uso de IA para acelerar o aprendizado",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contato@bgtech.academy",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://instagram.com/bgtech.academy",
+        "https://github.com/bgtech-academy"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "offerCount": "3",
+        "offers": [
+          {
+            "@type": "Course",
+            "name": "Formação Front-End Developer com IA",
+            "description": "Aprenda HTML, CSS, JavaScript, React e Tailwind com projetos reais",
+            "provider": {
+              "@type": "Organization",
+              "name": "BGTech Academy"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Formação Back-End Developer com IA",
+            "description": "Domine Node.js, Express, Banco de Dados e APIs com projetos práticos",
+            "provider": {
+              "@type": "Organization",
+              "name": "BGTech Academy"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Formação Full-Stack Developer com IA",
+            "description": "Formação completa Front-End e Back-End do zero ao deploy",
+            "provider": {
+              "@type": "Organization",
+              "name": "BGTech Academy"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="grid-bg"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <header id="header">
         <nav class="container">
@@ -29,6 +127,35 @@
                 <span></span>
             </div>
         </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <div class="mobile-nav-brand">
+                <span class="brand-bg">BGTech</span><span class="brand-tech"> { a c a d e m y }</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#metodos">Método</a></li>
+                <li><a href="#cursos">Formações</a></li>
+                <li><a href="#depoimentos">Resultados</a></li>
+                <li><a href="#inscricao" class="nav-cta">Começar Agora</a></li>
+            </ul>
+            
+            <div class="mobile-nav-footer">
+                <p>Conecte-se conosco</p>
+                <div class="mobile-social-icons">
+                    <a href="https://instagram.com/bgtech.academy" class="mobile-social-icon" title="@bgtech.academy">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/bgtech-academy" class="mobile-social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:contato@bgtech.academy" class="mobile-social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -36,12 +163,8 @@
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
-                        <h1>
-                            Aprenda.<br>
-                            Publique.<br>
-                            Desenvolva.<br>
-                            <span class="text-gradient">Construa seu portfólio.</span><br>
-                            Seja um profissional.
+                        <h1 id="typing-hero">
+                            <span class="typing-line"></span>
                         </h1>
                         <p class="hero-subtitle">
                             Na BGTech Academy, você não apenas assiste aulas. Você cria projetos reais, 
@@ -382,9 +505,15 @@
                 <div class="footer-section">
                     <h4>Conecte-se</h4>
                     <div class="social-icons">
-                        <a href="https://instagram.com/bgtech.academy" class="social-icon">📷</a>
-                        <a href="https://linkedin.com/company/bgtech-academy" class="social-icon">💼</a>
-                        <a href="mailto:contato@bgtech.academy" class="social-icon">✉️</a>
+                        <a href="https://instagram.com/bgtech.academy" class="social-icon" title="@bgtech.academy">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/bgtech-academy" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contato@bgtech.academy" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
             </div>

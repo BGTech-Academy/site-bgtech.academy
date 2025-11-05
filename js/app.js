@@ -185,6 +185,29 @@ courseCards.forEach(card => {
     }
 });
 
+// Mobile App-like behavior
+if (window.innerWidth <= 968) {
+    // Prevent context menu on long press (mobile)
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+    
+    // Prevent text selection on double tap
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', (e) => {
+        const now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+            e.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+    
+    // Prevent zoom on double tap for better app feel
+    document.addEventListener('dblclick', (e) => {
+        e.preventDefault();
+    });
+}
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

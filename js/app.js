@@ -120,7 +120,6 @@ if (typingElement) {
                     lineIndex++;
                     charIndex = 0;
                     setTimeout(typeNextChar, 1000); // Pause 1 second before next line
-                    setTimeout(typeNextChar, 1000); // Pause 1 second before next line
                 } else {
                     setTimeout(typeNextChar, 75); // Typing speed
                 }

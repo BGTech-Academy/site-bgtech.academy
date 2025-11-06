@@ -56,8 +56,8 @@ const typingElement = document.querySelector('.typing-line');
 if (typingElement) {
     const lines = [
         { text: 'Aprenda.', gradient: false },
-        { text: 'Publique.', gradient: false },
         { text: 'Desenvolva.', gradient: false },
+        { text: 'Publique.', gradient: false },
         { text: 'Construa seu portfólio.', gradient: true },
         { text: 'Seja um profissional.', gradient: false }
     ];
@@ -73,10 +73,10 @@ if (typingElement) {
     function type() {
         if (!isStarted) {
             isStarted = true;
-            // Wait 2 seconds with blinking cursor before starting
+            // Wait 0.5 seconds with blinking cursor before starting
             setTimeout(() => {
                 typeNextChar();
-            }, 2000);
+            }, 500);
             return;
         }
         
@@ -119,19 +119,19 @@ if (typingElement) {
                 if (charIndex > fullText.length) {
                     lineIndex++;
                     charIndex = 0;
-                    setTimeout(typeNextChar, 2000); // Pause 2 seconds before next line
+                    setTimeout(typeNextChar, 1000); // Pause 1 second before next line
                 } else {
-                    setTimeout(typeNextChar, 50); // Typing speed
+                    setTimeout(typeNextChar, 75); // Typing speed
                 }
             }
         } else {
-            // Finished typing - wait 1 second before removing cursor
+            // Finished typing - wait 3 seconds before removing cursor
             setTimeout(() => {
                 const cursor = typingElement.querySelector('.typing-cursor');
                 if (cursor) {
                     cursor.classList.add('finished');
                 }
-            }, 1000);
+            }, 3000);
         }
     }
     

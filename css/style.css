@@ -1147,6 +1147,7 @@ footer {
     opacity: 0;
     padding: 4rem 2rem 2rem;
     box-sizing: border-box;
+    pointer-events: none;
 }
 
 .mobile-nav::before {
@@ -1192,6 +1193,7 @@ footer {
 .mobile-nav.active {
     transform: translateX(0);
     opacity: 1;
+    pointer-events: auto;
 }
 
 .mobile-nav .nav-links {

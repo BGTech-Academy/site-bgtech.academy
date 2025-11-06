@@ -123,15 +123,11 @@ header.hidden {
 }
 
 nav {
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     padding: 1.2rem 2%;
     background: rgba(0, 30, 50, 0.8);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0, 115, 255, 0.1);
-    z-index: 1001;
     transition: all 0.3s ease;
     max-width: 100%;
     margin: 0;
@@ -1440,7 +1436,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
     header {
         padding: 1.2rem 2%;
     }
@@ -1453,9 +1449,9 @@ footer {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
-}
+} */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     header {
         padding: 1.2rem 1.5%;
     }
@@ -1486,21 +1482,20 @@ footer {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
-}
+} */
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
     .nav-links {
-        display: none; /* esconder menu em telas médias */
+        display: none;
     }
     
     .mobile-toggle {
-        display: flex; /* mostrar hamburguer */
+        display: flex;
     }
-}
+} */
 
 /* Mobile App-like behavior */
-@media (max-width: 968px) {
-    /* Disable text selection for app-like feel */
+/* @media (max-width: 968px) {
     body {
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -1510,7 +1505,6 @@ footer {
         -webkit-tap-highlight-color: transparent;
     }
     
-    /* Allow selection in inputs and editable content */
     input,
     textarea,
     [contenteditable="true"],
@@ -1521,21 +1515,19 @@ footer {
         user-select: text;
     }
     
-    /* Disable image long-press menu */
     img {
         -webkit-user-drag: none;
         -webkit-touch-callout: none;
         pointer-events: none;
     }
     
-    /* Re-enable pointer events for clickable images/links */
     a img,
     button img {
         pointer-events: auto;
     }
-}
+} */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .container {
         padding: 0 5%;
     }
@@ -1565,9 +1557,9 @@ footer {
     .cta-title {
         font-size: 3rem;
     }
-}
+} */
 
-@media (max-width: 968px) {
+/* @media (max-width: 968px) {
     .container {
         padding: 0 4%;
     }
@@ -1674,9 +1666,9 @@ footer {
         gap: 2rem;
         text-align: center;
     }
-}
+} */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .container {
         padding: 0 3%;
     }
@@ -1802,7 +1794,7 @@ footer {
     .social-icons {
         justify-content: center;
     }
-}
+} */
 
 /* Scroll Reveal Animation */
 .reveal {
